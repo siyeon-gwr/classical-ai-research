@@ -5,11 +5,13 @@ data for academic reproducibility.
 
 ## Overview
 
-Two RAG-based classical AI systems built on East Asian historical
+Three RAG-based classical AI systems built on East Asian historical
 texts:
 
 - **Zhuxi AI** — Based on Zhuzi Yulei (朱子語類), 14,317 utterances
 - **Jeongjo AI** — Based on Ildeungrok (日得錄), 2,916 utterances
+- **Nosa AI** — Based on Nosajip (蘆沙集), 5,505 utterance-units
+  segmented from 853 works
 
 ## Note on Access
 

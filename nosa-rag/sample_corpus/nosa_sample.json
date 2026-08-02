@@ -1,0 +1,68 @@
+{
+  "corpus": "蘆沙集 (Nosajip), collected works of Gi Jeong-jin (奇正鎭, 1798-1879)",
+  "description": "Structure-only placeholder sample for academic reproducibility. The metadata schema below is complete; the segment texts are intentionally left as placeholders and will be supplied separately by the author. The full corpus (5,505 utterance-units segmented from 853 works), vector database, gold-standard set, and production system are proprietary and operated at https://askmind.ai.",
+  "total_sample": 0,
+  "full_corpus_units": 5505,
+  "full_corpus_works": 853,
+  "topics": ["理動", "太極", "氣自爾"],
+  "segmentation_criteria": {
+    "principles": ["完結性 (completeness)", "最小性 (minimality)"],
+    "genre_rules": {
+      "書": "Response-unit segmentation after restoring quotation boundaries (인용 경계 복원 후 응답 단위).",
+      "與": "Completeness and minimality only (두 조건만).",
+      "雜著": "Completeness and minimality, plus mandatory citation-speaker attribution and cautionary marker (인용 화자·경고 필수)."
+    }
+  },
+  "metadata_schema": {
+    "id": "Unique identifier",
+    "genre": "One of 書 (formal letter), 與 (informal letter), 雜著 (treatise)",
+    "title": "Title of the source work (편명)",
+    "recipient": "Addressee, for 書/與 letters (null for 雜著)",
+    "text": "Original Sinographic segment text",
+    "grounding": "Grounding grade: '직접근거' (direct evidence, Nosa's own words) | '인용구간' (a span Nosa quotes from another party)",
+    "citation_speaker": "Attributed speaker/source when grounding is '인용구간' (null for direct evidence)",
+    "citation_span_label": "Label of the quoted span, e.g. the cited work (null for direct evidence)",
+    "topic": "Primary doctrinal topic",
+    "key_concepts": "List of key concepts appearing in the segment"
+  },
+  "license": "CC-BY-NC-ND 4.0",
+  "citation": "Lee, Si-yeon. \"Building a Nosa AI from the Nosajip Corpus...\" (in preparation).",
+  "segments": [
+    {
+      "id": "NS_雜著_0001",
+      "genre": "雜著",
+      "title": "(편명 미제공 — 저자 제공 예정)",
+      "recipient": null,
+      "text": "(표본 텍스트 미제공 — 직접근거 예시 자리. 저자 제공 예정)",
+      "grounding": "직접근거",
+      "citation_speaker": null,
+      "citation_span_label": null,
+      "topic": "理動",
+      "key_concepts": ["理", "動"]
+    },
+    {
+      "id": "NS_雜著_0002",
+      "genre": "雜著",
+      "title": "(편명 미제공 — 저자 제공 예정)",
+      "recipient": null,
+      "text": "(표본 텍스트 미제공 — 인용구간 예시 자리. 저자 제공 예정)",
+      "grounding": "인용구간",
+      "citation_speaker": "(인용 화자 미제공 — 저자 제공 예정)",
+      "citation_span_label": "(인용구간 라벨 미제공 — 저자 제공 예정)",
+      "topic": "氣自爾",
+      "key_concepts": ["氣自爾", "氣"]
+    },
+    {
+      "id": "NS_書_0001",
+      "genre": "書",
+      "title": "(편명 미제공 — 저자 제공 예정)",
+      "recipient": "(수신자 미제공 — 저자 제공 예정)",
+      "text": "(표본 텍스트 미제공 — 書 응답 단위 예시 자리. 저자 제공 예정)",
+      "grounding": "직접근거",
+      "citation_speaker": null,
+      "citation_span_label": null,
+      "topic": "太極",
+      "key_concepts": ["太極", "理", "圓通"]
+    }
+  ]
+}
