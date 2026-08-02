@@ -41,20 +41,12 @@ SAMPLE_DATA_PATH = "./sample_corpus/nosa_sample.json"
 def load_segments(path: str) -> list:
     """Load segmented utterance-units with metadata.
 
-    Unlike the dialogue-recorded corpora (Zhuzi Yulei, Ildeungrok),
-    the Nosajip is a literary collection of letters and treatises.
-    Continuous prose is therefore pre-segmented into utterance-units
-    under two governing criteria — completeness (完結性) and
-    minimality (最小性) — with genre-specific rules:
-
-        - 書 (formal letters): a segment is a response-unit whose
-          quotation boundaries have first been restored, so that the
-          author's reply is paired with the passage it answers.
-        - 與 (informal letters): completeness and minimality only;
-          no quotation-boundary restoration step.
-        - 雜著 (treatises): completeness and minimality, plus a
-          mandatory citation-speaker attribution and a cautionary
-          marker when the segment reports another party's view.
+    The Nosajip is a literary collection of letters and treatises, so
+    continuous prose is pre-segmented into utterance-units under two
+    criteria — completeness (完結性) and minimality (最小性) — applied
+    with genre-specific handling (書: response-unit after restoring
+    quotation boundaries; 與: the two criteria only; 雜著: the two
+    criteria plus citation-speaker attribution).
 
     Each segment contains:
         - id, genre (書 / 與 / 雜著), title, recipient
