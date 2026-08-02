@@ -1,6 +1,6 @@
 {
   "corpus": "蘆沙集 (Nosajip), collected works of Gi Jeong-jin (奇正鎭, 1798-1879)",
-  "description": "Sample for academic reproducibility. Segment texts are drawn from the publicly available Korean Classics DB (한국고전종합DB); the accompanying metadata is illustrative of the format. Volume/number values are left as TODO pending author confirmation. The full corpus (5,505 utterance-units segmented from 853 works), vector database, gold-standard set, and production system are proprietary and operated at https://askmind.ai.",
+  "description": "Sample for academic reproducibility. Segment texts are drawn from the publicly available Korean Classics DB (한국고전종합DB); the accompanying metadata is illustrative of the format. Volume/number (and recipient) values are left as TODO pending author confirmation. The full corpus (5,505 utterance-units segmented from 853 works), vector database, gold-standard set, and production system are proprietary and operated at https://askmind.ai.",
   "total_sample": 3,
   "full_corpus_units": 5505,
   "full_corpus_works": 853,
@@ -16,6 +16,7 @@
   "metadata_schema": {
     "id": "Unique identifier",
     "genre": "One of 書 (formal letter), 與 (informal letter), 雜著 (treatise)",
+    "subgenre": "Finer type within a genre, e.g. 答 (reply letter) within 書 (null if none)",
     "title": "Title of the source work (편명)",
     "recipient": "Addressee, for 書/與 letters (null for 雜著)",
     "volume": "Source volume number (卷); TODO pending author confirmation",
@@ -33,9 +34,10 @@
   "segments": [
     {
       "id": "NS_0001",
-      "genre": "雜著",
+      "genre": "書",
+      "subgenre": "答",
       "title": "TODO",
-      "recipient": null,
+      "recipient": "TODO",
       "volume": "TODO",
       "number": "TODO",
       "text": "太極之有動靜，天命之流行也",
@@ -48,31 +50,33 @@
     },
     {
       "id": "NS_0002",
-      "genre": "雜著",
+      "genre": "書",
+      "subgenre": "答",
       "title": "TODO",
-      "recipient": null,
+      "recipient": "TODO",
       "volume": "TODO",
       "number": "TODO",
       "text": "朱子曰。性雖寂然。而自有條理",
       "grounding": "직접근거",
       "citation_speaker": null,
       "citation_span_label": null,
-      "note": "표지(朱子曰)가 있으나 화자 미귀속 (attribution marker present in text but speaker not attributed in metadata).",
+      "note": "朱子曰 표지가 있으나 citation_speaker가 부여되지 않아 grounding이 직접근거로 남은 사례 — 검출 실패에 해당.",
       "topic": "性",
       "key_concepts": ["性", "條理"]
     },
     {
       "id": "NS_0003",
-      "genre": "雜著",
+      "genre": "書",
+      "subgenre": "答",
       "title": "TODO",
-      "recipient": null,
+      "recipient": "TODO",
       "volume": "TODO",
       "number": "TODO",
       "text": "或問性與仁之別。曰",
       "grounding": "직접근거",
       "citation_speaker": null,
       "citation_span_label": null,
-      "note": "문답체, 묻는 이 미상 (question-answer form; questioner unidentified).",
+      "note": "문답체 인용으로 묻는 이가 실제로 특정되지 않는 사례 — 스키마의 한계이며 검출 실패와 성격이 다름.",
       "topic": "性",
       "key_concepts": ["性", "仁"]
     }
