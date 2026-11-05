@@ -1,0 +1,14 @@
+항목	경로(repo상대)	git_수정일(committer ISO)	크기(bytes)	sha256	최종커밋해시
+제출본 색인 nosa_units.json	scripts/nosa/nosa_units.json	없음	없음	없음	없음
+운영 벡터DB 적재 색인(Pinecone)	(파일 아님 — 운영 DB)	없음	없음	없음	없음
+분절 스크립트 2_segment.py	scripts/nosa/2_segment.py	2026-07-13T13:46:01+09:00	8130	a3b1e359ebeba13919560175cab98909d69b74aa294024f2fe59376ba690f0ba	c6bc0a1d64c55bda13de53d2b480a2f06ca6335a
+원문 코퍼스 nosa_corpus.json	scripts/nosa/nosa_corpus.json	2026-07-12T23:49:47+09:00	4584771	fa5773a4305df1bdeb3448a0f59937a380c433bdefea2a85a08022481cb1600c	3907b6fb80e5f0ebf827b5ad523d8f767b6a2310
+생성지시문: scholars_config.py	routers/scholars_config.py	2026-08-11T11:50:50+09:00	24589	0ca1a719a6e91f3b437f305ac8b2e2c9a51a589a7851af9c3b0d63d5bc5cd071	2dfb8747df9c1a8355a85b9ea8b83fafd8f764f3
+생성지시문: base_scholar.py	routers/base_scholar.py	2026-08-11T11:50:50+09:00	13532	008bd2690dd3f176dbe0ee3129ce1084a843d0ae2213b95156449d444a016d18	2dfb8747df9c1a8355a85b9ea8b83fafd8f764f3
+교차보류 스크립트 eval_loo.py	scripts/nosa/eval_loo.py	2026-07-30T16:37:44+09:00	16198	db8eeae9aeb385860ae8c4db83b3167832ea214fff3722d94b373ecaa2a2953d	d3673aceb751d230150f11611b45216b578e43a0
+교차보류 로그 loo_run_*.txt	scripts/nosa/loo_run_*.txt	없음	없음	없음	없음
+표지 집계 스크립트 count_quotes.py	scripts/nosa/count_quotes.py	2026-07-30T11:31:18+09:00	3082	c9fc99c560c8906323f76b8a50c588b870715c84918c6e5786dedcc8cd393a6f	3e59da6c95d998b0ef2406da1e9db61a2a249305
+sample_unattributed.py	scripts/nosa/sample_unattributed.py	없음	없음	없음	없음
+원문 수집 crawl_nosa.py	scripts/nosa/crawl_nosa.py	2026-07-12T23:49:47+09:00	6000	209262df699e6883eea52aeeb4abdb550f5bde6864afe02683049512cd979587	3907b6fb80e5f0ebf827b5ad523d8f767b6a2310
+원문 수집 crawl_all.py	scripts/nosa/crawl_all.py	2026-07-12T23:49:47+09:00	5685	52434232565810f47ebb8e9a2c7f6361360099c424e929b5bc83abc27e123f26	3907b6fb80e5f0ebf827b5ad523d8f767b6a2310
+목차 스캔 scan_toc.py	scripts/nosa/scan_toc.py	2026-07-12T23:49:47+09:00	3624	ef1a50d7f5af3b33def6cc0e2d11f635a920034278fbca6fb6f1c552d16ed1bb	3907b6fb80e5f0ebf827b5ad523d8f767b6a2310
